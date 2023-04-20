@@ -1,0 +1,113 @@
+<div id="alp-hero">
+    <div id="hero-callout">
+      <h1>
+        Agents, <br />
+        serve your clients the simpler way
+      </h1>
+      <p>
+        With Opendoor, the buying and selling process is simple, certain, and
+        fast — so you can keep your clients moving smoothly through life's
+        biggest transitions.
+      </p>
+    </div>
+    <div id="hero-form">
+      <div id="hero-form-tablist" role="tablist" aria-label="Form tabs">
+        <button
+          id="hero-form-tab-seller"
+          role="tab"
+          aria-selected="true"
+          aria-controls="hero-form-seller"
+          tabindex="-1"
+        >
+          Sell
+        </button>
+        <button
+          id="hero-form-tab-buyer"
+          role="tab"
+          aria-selected="false"
+          aria-controls="hero-form-buyer"
+          tabindex="0"
+        >
+          Buy
+        </button>
+        <div id="hero-form-tablist-background"></div>
+      </div>
+      <div
+        id="hero-form-buyer"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="hero-form-tab-buyer"
+        hidden="true"
+      >
+        <div id="hero-form-buyer-input" class="autocomplete">
+          <label for="">What property is your client interested in</label>
+          <input
+            type="text"
+            oninput="fetchAddresses(this)"
+            placeholder="Enter address"
+            aria-label="What property is your client interested in?"
+            label="What property is your client interested in"
+          />
+          <button class="nMobile">Make an offer</button>
+          <button class="mobileOnly">Go</button>
+          <div class="inline-error">
+            We couldn't find that address. Try without zip codes or unit
+            numbers.
+          </div>
+        </div>
+      </div>
+      <div
+        id="hero-form-seller"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="hero-form-tab-seller"
+      >
+        <div id="hero-form-seller-input">
+          <svg></svg>
+          <div class="od-address-input">
+            <div class="one">
+              <div class="two">
+                <div class="cta-input-wrapper">
+                  <div class="css-jneeu5">
+                    <div class="cta-input-form">
+                      <div class="css-1qhc">
+                        <div class="css-jv2e2">
+                          <input
+                            type="text"
+                            class="cta-input-control"
+                            aria-label="Enter your seller's address"
+                            autocomplete="off"
+                            name="CtaInput"
+                            placeholder="Enter your seller's address"
+                            required=""
+                          />
+                        </div>
+                      </div>
+                      <div class="cta-input-button">
+                        <button
+                          class="cta-button"
+                          variant="primary"
+                          type="submit"
+                        >
+                          <span class="css-1lrl7yk">Get an offer</span>
+                          <span class="css-16yaint">Go</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="hero-image">
+      <img
+        src="https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-hero.png"
+        alt=""
+      />
+    </div>
+  </div>
+
+  <!-- <app-section></app-section> -->

@@ -1,0 +1,140 @@
+#alp-testimonials {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  .alp-testimonials-text {
+    width: 484px;
+    margin-right: 51px;
+    p {
+      font-weight: 650;
+      font-size: 26px;
+      line-height: 32px;
+      width: 443px;
+      color: #222222;
+      margin-bottom: 33px;
+    }
+    span {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 32px;
+      color: #949494;
+    }
+    #alp-testimonials--control {
+      visibility: hidden;
+      display: flex;
+      margin-top: 62px;
+    }
+  }
+  .alp-testimonials--image {
+    position: relative;
+    display: flex;
+    left: 40px;
+    min-width: 730px;
+    height: 569px;
+    background: linear-gradient(0deg, #0d76d6 0%, #11adc2 100%);
+    border-radius: 124px 0px 0px 30px;
+    align-items: flex-end;
+    justify-content: center;
+    #testimonials--image-1 {
+      height: 110%;
+      width: 100%;
+      background-size: 100%;
+      background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-testimonial-1.png");
+      background-position: 15px -62px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+//--------------------->
+@media screen and (max-width: 1439px) {
+  #alp-testimonials {
+    .alp-testimonials-text {
+      p {
+      }
+      span {
+      }
+      #alp-testimonials--control {
+      }
+    }
+    .alp-testimonials--image {
+      #testimonials--image-1 {
+      }
+    }
+  }
+}
+//--------------------->
+@media screen and (max-width: 1023px) {
+  #alp-testimonials {
+    .alp-testimonials-text {
+      width: 291px;
+      margin-right: 48px;
+      padding-left: 11px;
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        width: 291px;
+      }
+      span {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      #alp-testimonials--control {
+        margin-top: 29.5px;
+      }
+    }
+    .alp-testimonials--image {
+      left: 32px;
+      min-width: 370px;
+      height: 352px;
+      border-radius: 76.5965px 0px 0px 18.5314px;
+      #testimonials--image-1 {
+        height: 110%;
+        width: 100%;
+        background-size: 110%;
+        background-position: 0 -40px;
+      }
+    }
+  }
+}
+
+//--------------------->
+
+@media screen and (max-width: 767px) {
+  #alp-testimonials {
+    flex-direction: column-reverse;
+    margin-top: 120px;
+    .alp-testimonials-text {
+      width: 326px;
+      margin-right: 0;
+      padding-left: 0;
+      p {
+        font-size: 23.9906px;
+        line-height: 32px;
+        width: 326px;
+        margin: 40px 0 24px;
+      }
+      span {
+        font-size: 23.9906px;
+        line-height: 32px;
+      }
+      #alp-testimonials--control {
+        visibility: hidden;
+        display: flex;
+        margin-top: 62px;
+      }
+    }
+    .alp-testimonials--image {
+      left: 12px;
+      min-width: 354px;
+      height: 328.3px;
+      border-radius: 74.3708px 0px 0px 17.9929px;
+      #testimonials--image-1 {
+        height: 110%;
+        width: 100%;
+        background-size: 110%;
+        background-position: 0 -40px;
+      }
+    }
+  }
+}

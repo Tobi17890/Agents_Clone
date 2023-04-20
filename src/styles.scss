@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //   font-family: AVENGERS;
+}
+@font-face {
+  font-family: AVENGERS;
+  src: url(assets/Robs.ttf) format("truetype");
+}
+:root {
+  --desktop-large: 1440px;
+  --desktop-small: 1024px;
+  --tablet: 768px;
+  --mobile: 375px;
+  --padding-dl: 40px;
+  --padding-ds: var(--padding-dl);
+  --padding-t: 32px;
+  --padding-m: 24px;
+  --header-height-dl: 82px;
+  --header-height-ds: var(--header-height-dl);
+  --header-height-t: 43.73px;
+  --header-height-m: 51.98px;
+  --img-placeholder-height-dl: 470px;
+  --img-placeholder-height-ds: 399px;
+  --img-placeholder-height-t: 289px;
+  --alp-img-group-padding-dl: 110px;
+  --alp-img-group-padding-ds: 110px;
+  --alp-img-group-padding-t: 50px;
+}
+
+.alp-application {
+  width: 100%;
+  height: calc(100vh - var(--header-height-dl));
+  padding: 0 calc((100vw - var(--desktop-large)) / 2 + var(--padding-dl));
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--header-height-dl);
+  background-color: #fff;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-y: auto;
+}
+
+.alp-application-wrapper {
+  width: 100%;
+  height: calc(100vh - var(--header-height-dl));
+  padding: 0 calc((100vw - var(--desktop-large)) / 2 + var(--padding-dl));
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--header-height-dl);
+  background-color: #fff;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 1439px) {
+  .alp-application-wrapper {
+    height: calc(100vh - var(--header-height-ds));
+    padding: 0 var(--padding-ds);
+    margin-top: var(--header-height-ds);
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .alp-application-wrapper {
+    height: calc(100vh - var(--header-height-t));
+    padding: 0 var(--padding-t);
+    margin-top: var(--header-height-t);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .alp-application-wrapper {
+    height: calc(100vh - var(--header-height-m));
+    padding: 0 calc((100vw - var(--mobile)) / 2 + var(--padding-m));
+    margin-top: var(--header-height-m);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

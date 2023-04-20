@@ -1,0 +1,1011 @@
+#alp-sell {
+  margin: 130px 0px 0 calc((100vw - 1361px) / -2);
+  width: 100vw;
+  padding: 0;
+  background: #cfedf4;
+  border-radius: 13px;
+  position: relative;
+  // margin-left: 1px;
+  .mdiv {
+    padding: 120px 155px;
+    max-width: var(--desktop-large);
+    margin: 0 auto;
+    position: relative;
+    #alp-sell--bg-effect {
+      background: #fff;
+      opacity: 0.5;
+      height: 2575px;
+      position: absolute;
+      top: 250px;
+      width: calc(511px + ((100vw - var(--desktop-large)) / 2));
+      left: 929px;
+      border-radius: 200px 0 0;
+      div {
+        position: absolute;
+        top: 30px;
+        border-radius: 178px 0 0;
+        bottom: 126px;
+        left: 30px;
+        right: 0;
+        background: #cfedf4;
+      }
+    }
+    #alp-sell--callout {
+      width: 785px;
+      h2 {
+        color: #222222;
+        margin: 0;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 96px;
+        overflow-y: hidden;
+      }
+      p {
+        opacity: 0.6;
+        color: #222;
+        font-size: 18px;
+        line-height: 125%;
+        margin: 12px 0 75px !important;
+      }
+    }
+    #alp-sell--image-list {
+      box-sizing: border-box;
+      .row {
+        display: flex;
+        position: relative;
+
+        .col.sticky-parent {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          height: 100%;
+          padding-bottom: var(--alp-img-group-padding-dl);
+          .sticky-images {
+            position: sticky;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--img-placeholder-height-dl);
+            top: calc(
+              50vh - (var(--header-height-dl) / 2) -
+                (var(--img-placeholder-height-dl) / 2)
+            );
+            .alp-img-placeholder {
+              min-width: 552px;
+              height: var(--img-placeholder-height-dl);
+              background: #e7f4fa;
+              border-radius: 24px;
+              overflow: visible;
+              margin-right: 138px;
+              position: relative;
+              .appear.active {
+                opacity: 1;
+                transition: 0.75s all ease;
+              }
+              #sell--image-1 {
+                background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-1.png");
+                width: 120%;
+                height: 100%;
+                background-size: cover;
+              }
+              #sell--image-2 {
+                width: 100%;
+                max-height: unset;
+                background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-2.png");
+                height: 116%;
+                background-size: 192%;
+                position: absolute;
+                bottom: 0;
+                background-position: -121px -4px;
+                border-radius: inherit;
+                background-repeat: no-repeat;
+              }
+              #sell--image-2.appear {
+                opacity: 0;
+                transition: 0.75s all ease;
+              }
+              #sell--image-3 {
+                background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-3.png");
+                width: 100%;
+                height: 107%;
+                position: absolute;
+                bottom: 0;
+                background-size: 152%;
+                background-position: -41px -83px;
+                background-repeat: no-repeat;
+                border-radius: inherit;
+              }
+              #sell--image-3.appear {
+                opacity: 0;
+                transition: 0.75s all ease;
+              }
+            }
+          }
+        }
+        .col {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          .alp-img-group {
+            display: flex;
+            align-items: center;
+            padding-bottom: var(--alp-img-group-padding-dl);
+            .alp-img-placeholder.mobile-visible-only {
+              visibility: hidden;
+            }
+            .alp-img-placeholder {
+              min-width: 552px;
+              height: var(--img-placeholder-height-dl);
+              background: #e7f4fa;
+              border-radius: 24px;
+              overflow: visible;
+              margin-right: 138px;
+              position: relative;
+              .sell--image-1 {
+                background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-1.png");
+                width: 120%;
+                height: 100%;
+                background-size: cover;
+              }
+              .sell--image-2 {
+                width: 100%;
+                max-height: unset;
+                background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-2.png");
+                height: 116%;
+                background-size: 192%;
+                position: absolute;
+                bottom: 0;
+                background-position: -121px -4px;
+                border-radius: inherit;
+                background-repeat: no-repeat;
+              }
+              .sell--image-3 {
+                background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-3.png");
+                width: 100%;
+                height: 107%;
+                position: absolute;
+                bottom: 0;
+                background-size: 152%;
+                background-position: -41px -83px;
+                background-repeat: no-repeat;
+                border-radius: inherit;
+              }
+            }
+
+            .alp-text {
+              width: 386px;
+              background: #cfedf4;
+              padding: 30px 0;
+              h3 {
+                font-weight: 700;
+                font-size: 42px;
+                line-height: 56px;
+                margin: 0;
+                color: #222222;
+              }
+              p {
+                font-size: 18px;
+                line-height: 125%;
+                color: #222222;
+                opacity: 0.6;
+              }
+              a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 23px;
+                line-height: 28px;
+                color: #0d76d6;
+                display: block;
+                img {
+                  margin: 3px 0 0 10px;
+                  padding-top: 1px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .alp-bg-div {
+        box-sizing: border-box;
+      }
+      #alp-sell--form {
+        background: linear-gradient(0deg, #0d76d6 0%, #11adc2 100%);
+        border-radius: 12.3882px;
+        opacity: 1;
+        width: 1130px;
+        height: 418px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-weight: 700;
+          font-size: 80px;
+          line-height: 96px;
+          color: #fff;
+          margin: 0;
+          overflow-y: hidden;
+        }
+        #alp-sell--form-input {
+          margin-top: 30px;
+          position: relative;
+          width: 512px;
+          .od-address-input {
+            display: block;
+            position: relative;
+            .css-uq2v47 {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              border-radius: 4px;
+              .od-cta-input {
+                display: flex;
+                width: 100%;
+                background-color: transparent !important;
+                border: none !important;
+                box-shadow: none;
+                border-radius: 0;
+                .cta-input-wrapper {
+                  background-color: transparent !important;
+                  border: none !important;
+                  box-shadow: none;
+                  border-radius: 0;
+                  display: block;
+                  position: relative;
+                  width: 100%;
+                  padding: 10px;
+                  background: rgb(255, 255, 255);
+                  .css-jneeu5 {
+                    position: relative;
+                    .cta-input-form {
+                      display: flex;
+                      .css-1qhc5pl {
+                        appearance: none;
+                        border-radius: 2px;
+                        box-sizing: border-box;
+                        flex: 1 1 0%;
+                        border: 0px none;
+                        padding: 0px;
+                        display: flex;
+                        -moz-box-align: center;
+                        align-items: center;
+                        .css-jv2e2 {
+                          width: 100%;
+                          .cta-input-control {
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #949494;
+                            padding: 23.5px 150px 23.5px 24.5px;
+                            height: 74px;
+                            width: 512px;
+                            background: #ffffff;
+                            box-shadow: 0px 9.48718px 20.8718px
+                                rgba(29, 71, 123, 0.08),
+                              0px 1.89744px 11.3846px rgba(29, 71, 123, 0.08);
+                            border-radius: 10px;
+                            border: none;
+                            overflow: hidden;
+                            transition-duration: 0.3s;
+                            transition-property: color;
+                            text-overflow: ellipsis;
+                            margin: auto;
+                            text-align: left;
+                            box-sizing: border-box;
+                            text-rendering: optimizeLegibility;
+                          }
+                        }
+                      }
+                      .cta-input-button {
+                        display: flex;
+                        -moz-box-align: center;
+                        align-items: center;
+                        max-width: 50%;
+                        overflow: hidden;
+                        margin-left: 8px;
+                        .cta-button {
+                          right: -8px;
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: center;
+                          align-items: center;
+                          padding: 15px 16px;
+                          border: none;
+                          font-weight: 600;
+                          font-size: 13.2821px;
+                          line-height: 23px;
+                          color: #ffffff;
+                          width: 127.13px;
+                          height: 45.54px;
+                          background: #0d76d6;
+                          border-radius: 8px;
+                          position: absolute;
+                          top: 14.23px;
+                          cursor: pointer;
+                          -moz-box-pack: center;
+                          transition: all 0.3s ease 0s;
+                          -moz-box-align: center;
+                          .css-1lrl7yk {
+                            font-weight: 600;
+                            font-size: 13.2821px;
+                            line-height: 23px;
+                            color: #ffffff;
+                            cursor: pointer;
+                          }
+                          .css-16yaint {
+                            display: none !important;
+                            font-weight: 600;
+                            font-size: 13.2821px;
+                            line-height: 23px;
+                            color: #ffffff;
+                            cursor: pointer;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//--------------------->
+@media screen and (max-width: 1439px) {
+  #alp-sell {
+    box-sizing: border-box;
+    .mdiv {
+      width: 100%;
+      #alp-sell--bg-effect {
+        div {
+        }
+      }
+      #alp-sell--callout {
+        h2 {
+          --font-min: 53;
+          --font-max: 80;
+          --lh-min: 64;
+          --lh-max: 96;
+          --screenwidth-min: 1024;
+          --screenwidth-max: 1440;
+          --font-size: calc(
+            var(--font-min) * 1px + (var(--font-max) - var(--font-min)) *
+              (
+                (100vw - var(--screenwidth-min) * 1px) /
+                  (var(--screenwidth-max) - var(--screenwidth-min))
+              )
+          );
+          --line-height: calc(
+            var(--lh-min) * 1px + (var(--lh-max) - var(--lh-min)) *
+              (
+                (100vw - var(--screenwidth-min) * 1px) /
+                  (var(--screenwidth-max) - var(--screenwidth-min))
+              )
+          );
+          font-size: var(--font-size);
+          line-height: var(--line-height);
+        }
+        p {
+        }
+      }
+      #alp-sell--image-list {
+        .row {
+          .col.sticky-parent {
+            .sticky-images {
+              .alp-img-placeholder {
+                .appear.active {
+                }
+                #sell--image-1 {
+                }
+                #sell--image-2 {
+                }
+                #sell--image-2.appear {
+                }
+                #sell--image-3 {
+                }
+                #sell--image-3.appear {
+                }
+              }
+            }
+          }
+          .col {
+            width: 100%;
+            align-items: flex-start;
+            .alp-img-group {
+              width: 100%;
+              justify-content: space-around;
+              .alp-img-placeholder.mobile-visible-only {
+              }
+              .alp-img-placeholder {
+                .sell--image-1 {
+                }
+                .sell--image-2 {
+                }
+                .sell--image-3 {
+                }
+              }
+
+              .alp-text {
+                h3 {
+                }
+                p {
+                }
+                a {
+                  img {
+                  }
+                }
+              }
+            }
+          }
+        }
+        .alp-bg-div {
+        }
+        #alp-sell--form {
+          width: 937px;
+          margin: 0 auto;
+          h2 {
+            --font-min: 59;
+            --font-max: 80;
+            --lh-min: 64;
+            --lh-max: 96;
+            --screenwidth-min: 1024;
+            --screenwidth-max: 1440;
+            --font-size: calc(
+              var(--font-min) * 1px + (var(--font-max) - var(--font-min)) *
+                (
+                  (100vw - var(--screenwidth-min) * 1px) /
+                    (var(--screenwidth-max) - var(--screenwidth-min))
+                )
+            );
+            --line-height: calc(
+              var(--lh-min) * 1px + (var(--lh-max) - var(--lh-min)) *
+                (
+                  (100vw - var(--screenwidth-min) * 1px) /
+                    (var(--screenwidth-max) - var(--screenwidth-min))
+                )
+            );
+            font-size: var(--font-size);
+            line-height: var(--line-height);
+            width: 500px;
+          }
+          #alp-sell--form-input {
+            .od-address-input {
+              .css-uq2v47 {
+                .od-cta-input {
+                  .cta-input-wrapper {
+                    .css-jneeu5 {
+                      .cta-input-form {
+                        .css-1qhc5pl {
+                          .css-jv2e2 {
+                            .cta-input-control {
+                            }
+                          }
+                        }
+                        .cta-input-button {
+                          .cta-button {
+                            .css-1lrl7yk {
+                            }
+                            .css-16yaint {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//--------------------->
+
+@media screen and (max-width: 1023px) {
+  #alp-sell {
+    margin: 130px 0px 0 calc(var(--padding-t) * -1);
+    width: 100vw;
+    padding: 0;
+    .mdiv {
+      padding: 76px 34px;
+      max-width: var(--tablet);
+      margin: 0 auto;
+      position: relative;
+      #alp-sell--bg-effect {
+        position: absolute;
+        top: 197px;
+        width: calc(260px + ((100vw - var(--tablet)) / 2));
+        left: 508px;
+        height: 1305px;
+        border-top-left-radius: 100px;
+        div {
+          position: absolute;
+          top: 18.6635px;
+          border-top-left-radius: 83px;
+          bottom: 0;
+          left: 18.6635px;
+          right: 0;
+        }
+      }
+      #alp-sell--callout {
+        width: 525px;
+        h2 {
+          line-height: 56px;
+          --font-min: 42;
+          --font-max: 61;
+          --lh-min: 46;
+          --lh-max: 64;
+          --screenwidth-min: 768;
+          --screenwidth-max: 1024;
+          // height: 168px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 24px;
+          width: 343px;
+          margin: 12px 0 90px !important;
+        }
+      }
+      #alp-sell--image-list {
+        .row {
+          .col.sticky-parent {
+            padding-bottom: var(--alp-img-group-padding-t);
+            .sticky-images {
+              position: sticky;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: var(--img-placeholder-height-t);
+              top: calc(
+                50vh - (var(--header-height-t) / 2) -
+                  (var(--img-placeholder-height-t) / 2)
+              );
+              .alp-img-placeholder {
+                min-width: 341px;
+                height: var(--img-placeholder-height-t);
+                border-radius: 14.7481px;
+                margin-right: 90px;
+                .appear.active {
+                }
+                #sell--image-1 {
+                  width: 120%;
+                  height: 100%;
+                  background-size: cover;
+                }
+                #sell--image-2 {
+                  width: 100%;
+                  height: 120%;
+                  background-size: 190%;
+                  background-position: -65px 10px;
+                }
+                #sell--image-2.appear {
+                }
+                #sell--image-3 {
+                  width: 100%;
+                  height: 107%;
+                  bottom: 0;
+                  background-size: 160%;
+                  background-position: -41px -56px;
+                }
+                #sell--image-3.appear {
+                }
+              }
+            }
+          }
+          .col {
+            .alp-img-group {
+              padding-bottom: var(--alp-img-group-padding-t);
+              .alp-img-placeholder.mobile-visible-only {
+                min-width: 341px;
+                height: var(--img-placeholder-height-t);
+                border-radius: 14.7481px;
+                margin-right: 90px;
+              }
+              .alp-img-placeholder {
+                .sell--image-1 {
+                }
+                .sell--image-2 {
+                }
+                .sell--image-3 {
+                }
+              }
+
+              .alp-text {
+                width: 227px;
+                h3 {
+                  font-size: 24px;
+                  line-height: 32px;
+                }
+                p {
+                  font-size: 12px;
+                  line-height: 22px;
+                }
+                a {
+                  font-size: 16px;
+                  line-height: 20px;
+                  img {
+                    margin: 3px 0 0 5px;
+                    padding-top: 5px;
+                    width: 16px;
+                    height: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .alp-bg-div {
+        }
+        #alp-sell--form {
+          background: linear-gradient(0deg, #0d76d6 0%, #11adc2 100%);
+          border-radius: 14.9097px;
+          width: 700px;
+          height: 236px;
+          h2 {
+            --font-min: 42;
+            --font-max: 59;
+            --lh-min: 56;
+            --lh-max: 64;
+            --screenwidth-min: 768;
+            --screenwidth-max: 1024;
+            width: auto;
+          }
+          #alp-sell--form-input {
+            border-radius: 5.625px;
+            margin-top: 7px;
+            width: 288px;
+            .od-address-input {
+              .css-uq2v47 {
+                .od-cta-input {
+                  .cta-input-wrapper {
+                    .css-jneeu5 {
+                      .cta-input-form {
+                        .css-1qhc5pl {
+                          .css-jv2e2 {
+                            .cta-input-control {
+                              padding: 13.945px 95px 13.94px 14.63px;
+                              height: 43.87px;
+                              font-size: 10px;
+                              border-radius: 5.625px;
+                              line-height: 13px;
+                              width: 288px;
+                            }
+                          }
+                        }
+                        .cta-input-button {
+                          .cta-button {
+                            height: 27px;
+                            right: -10px;
+                            top: 8.2px;
+                            padding: 9px 6.5px;
+                            font-weight: 600;
+                            font-size: 10px;
+                            line-height: 13px;
+                            width: 90px;
+                            .css-1lrl7yk {
+                              font-weight: 600;
+                              font-size: 10px;
+                              line-height: 13px;
+                            }
+                            .css-16yaint {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// -------------------->
+
+@media screen and (max-width: 767px) {
+  #alp-sell {
+    padding: 0;
+    width: 100vw;
+    margin: 0 0 0 calc((100vw - 329px) / -2);
+    border-radius: 0;
+    .mdiv {
+      padding: 60px 27px;
+      width: var(--mobile);
+      #alp-sell--bg-effect {
+        display: none;
+        position: absolute;
+        top: 400px;
+        width: 275px;
+        height: 185px;
+        right: 0;
+        border-top-left-radius: 100px;
+        div {
+          position: absolute;
+          top: 30px;
+          border-radius: 178px 0 0;
+          bottom: 126px;
+          left: 30px;
+          right: 0;
+          background: #cfedf4;
+        }
+      }
+      #alp-sell--callout {
+        width: 327px;
+        h2 {
+          font-size: 41.9835px;
+          line-height: 56px;
+          margin-left: 0;
+        }
+        p {
+          font-size: 15.9937px;
+          line-height: 26px;
+          width: 270px;
+        }
+      }
+      #alp-sell--image-list {
+        margin-top: 90px;
+        .row {
+          display: flex;
+          position: relative;
+
+          .col.sticky-parent {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            height: 100%;
+            padding-bottom: var(--alp-img-group-padding-dl);
+            .sticky-images {
+              position: sticky;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: var(--img-placeholder-height-dl);
+              top: calc(
+                50vh - (var(--header-height-dl) / 2) -
+                  (var(--img-placeholder-height-dl) / 2)
+              );
+              .alp-img-placeholder {
+                min-width: 326px;
+                height: 254px;
+                border-radius: 14px;
+                margin-bottom: 25px;
+                display: none !important;
+                .appear.active {
+                  opacity: 1;
+                  transition: 0.75s all ease;
+                }
+                #sell--image-1 {
+                  background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-1.png");
+                  width: 120%;
+                  height: 100%;
+                  background-size: cover;
+                }
+                #sell--image-2 {
+                  width: 100%;
+                  max-height: unset;
+                  background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-2.png");
+                  height: 116%;
+                  background-size: 192%;
+                  position: absolute;
+                  bottom: 0;
+                  background-position: -121px -4px;
+                  border-radius: inherit;
+                  background-repeat: no-repeat;
+                }
+                #sell--image-2.appear {
+                  opacity: 0;
+                  transition: 0.75s all ease;
+                }
+                #sell--image-3 {
+                  background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-3.png");
+                  width: 100%;
+                  height: 107%;
+                  position: absolute;
+                  bottom: 0;
+                  background-size: 152%;
+                  background-position: -41px -83px;
+                  background-repeat: no-repeat;
+                  border-radius: inherit;
+                }
+                #sell--image-3.appear {
+                  opacity: 0;
+                  transition: 0.75s all ease;
+                }
+              }
+            }
+          }
+          .col {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .alp-img-group {
+              flex-direction: column;
+              align-items: flex-start;
+              .alp-img-placeholder.mobile-visible-only {
+                visibility: visible;
+                min-width: 326px;
+                height: 254px;
+                border-radius: 14px;
+                margin-bottom: 25px;
+              }
+              .alp-img-placeholder {
+                // min-width: 552px;
+                // height: var(--img-placeholder-height-dl);
+                // background: #e7f4fa;
+                // border-radius: 24px;
+                // overflow: visible;
+                // margin-right: 138px;
+                // position: relative;
+                .sell--image-1 {
+                  background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-1.png");
+                  width: 120%;
+                  height: 100%;
+                  background-size: cover;
+                }
+                .sell--image-2 {
+                  background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-2.png");
+                  width: 100%;
+                  height: 120%;
+                  background-size: 182%;
+                  background-position: -58px -10px;
+                }
+                .sell--image-3 {
+                  background-image: url("https://www.opendoor.com/w/wp-content/uploads/2022/07/agents-lp-sell-3.png");
+                  width: 100%;
+                  height: 107%;
+                  bottom: 0;
+                  background-size: 160%;
+                  background-position: -39px -54px;
+                }
+              }
+
+              .alp-text {
+                width: 320px;
+                padding: 0 0 20px 0;
+                margin: 0 0 10px 0;
+                h3 {
+                  font-size: 31.9874px;
+                  line-height: 40px;
+                }
+                p {
+                  font-size: 15.9937px;
+                  line-height: 26px;
+                }
+                a {
+                  text-decoration: none;
+                  font-weight: 500;
+                  font-size: 23px;
+                  line-height: 28px;
+                  color: #0d76d6;
+                  display: none;
+                  img {
+                    margin: 3px 0 0 10px;
+                    padding-top: 1px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .alp-bg-div {
+          box-sizing: border-box;
+        }
+        #alp-sell--form {
+          border-radius: 23.9906px;
+          width: 326px;
+          height: 273px;
+          text-align: center;
+          h2 {
+            font-size: 42px;
+            line-height: 56px;
+            width: 210px;
+          }
+          #alp-sell--form-input {
+            width: 255px;
+            .od-address-input {
+              display: block;
+              position: relative;
+              .css-uq2v47 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                border-radius: 4px;
+                .od-cta-input {
+                  display: flex;
+                  width: 100%;
+                  background-color: transparent !important;
+                  border: none !important;
+                  box-shadow: none;
+                  border-radius: 0;
+                  .cta-input-wrapper {
+                    background-color: transparent !important;
+                    border: none !important;
+                    box-shadow: none;
+                    border-radius: 0;
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    padding: 10px;
+                    background: rgb(255, 255, 255);
+                    .css-jneeu5 {
+                      position: relative;
+                      .cta-input-form {
+                        display: flex;
+                        .css-1qhc5pl {
+                          appearance: none;
+                          border-radius: 2px;
+                          box-sizing: border-box;
+                          flex: 1 1 0%;
+                          border: 0px none;
+                          padding: 0px;
+                          display: flex;
+                          -moz-box-align: center;
+                          align-items: center;
+                          .css-jv2e2 {
+                            width: 100%;
+                            .cta-input-control {
+                              font-size: 13.9945px;
+                              line-height: 125%;
+                              padding: 21px 56px 21px 18px;
+                              height: 60px;
+                              width: 255px;
+                              border-radius: 15.9937px;
+                              border: 1.99921px solid rgba(13, 118, 214, 0.2);
+                            }
+                          }
+                        }
+                        .cta-input-button {
+                          display: flex;
+                          -moz-box-align: center;
+                          align-items: center;
+                          max-width: 50%;
+                          overflow: hidden;
+                          margin-left: 8px;
+                          .cta-button {
+                            border-radius: 69.9725px;
+                            position: absolute;
+                            top: 13px;
+                            right: -6px;
+                            padding: 10.52px;
+                            border: none;
+                            width: 34px;
+                            height: 34px;
+                            background-image: url("data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuOTYzMzkgMC4yMDI2MzdMNS44MjI0MSAxLjM0MzYyTDEwLjMzNzggNS44NjcwOEgwLjQ4OTc0NlY3LjQ4NTQ5SDEwLjMzNzhMNS44MjI0MSAxMi4wMDg5TDYuOTYzMzkgMTMuMTQ5OUwxMy40MzcgNi42NzYyOEw2Ljk2MzM5IDAuMjAyNjM3WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+                            text-indent: -9999px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            .css-1lrl7yk {
+                              display: none;
+                            }
+                            .css-16yaint {
+                              display: none !important;
+                              font-weight: 600;
+                              font-size: 13.2821px;
+                              line-height: 23px;
+                              color: #ffffff;
+                              cursor: pointer;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+.apl-team {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .noMoblie {
+    margin: 10px 0 80px;
+    color: #222222;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    overflow-y: hidden;
+  }
+  .apl-card {
+    display: flex;
+    width: 886px;
+    height: 292px;
+    background: #ffffff;
+    box-shadow: 0px 10px 22px rgba(29, 71, 123, 0.08),
+      0px 2px 12px rgba(29, 71, 123, 0.08);
+    border-radius: 24px;
+    margin-bottom: 48px;
+    .icon {
+      background: linear-gradient(
+        0deg,
+        rgba(13, 118, 214, 0.2) 0%,
+        rgba(17, 173, 194, 0.2) 100%
+      );
+      width: 382px;
+      height: 292px;
+      border-radius: 24px 0px 0px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fa-icon {
+        font-size: 120px;
+      }
+    }
+    .text {
+      padding: 0 50px 0 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0;
+        color: #212121;
+      }
+      p {
+        font-size: 16px;
+        margin: 14px 0 !important;
+        line-height: 26px;
+        color: #000000;
+        width: 305px;
+      }
+      a {
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 28px;
+        color: #0d76d6;
+        display: block;
+        text-decoration: none;
+        fa-icon {
+          margin-left: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1439px) {
+  .apl-team {
+    .noMoblie {
+      --font-min: 53;
+      --font-max: 80;
+      --lh-min: 64;
+      --lh-max: 96;
+      --screenwidth-min: 1024;
+      --screenwidth-max: 1440;
+      --font-size: calc(
+        var(--font-min) * 1px + (var(--font-max) - var(--font-min)) *
+          (
+            (100vw - var(--screenwidth-min) * 1px) /
+              (var(--screenwidth-max) - var(--screenwidth-min))
+          )
+      );
+      --line-height: calc(
+        var(--lh-min) * 1px + (var(--lh-max) - var(--lh-min)) *
+          (
+            (100vw - var(--screenwidth-min) * 1px) /
+              (var(--screenwidth-max) - var(--screenwidth-min))
+          )
+      );
+      font-size: var(--font-size);
+      line-height: var(--line-height);
+    }
+    .apl-card {
+      .icon {
+        fa-icon {
+        }
+      }
+      .text {
+        h3 {
+        }
+        p {
+        }
+        a {
+          fa-icon {
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .apl-team {
+    .noMoblie {
+      --font-min: 42;
+      --font-max: 53;
+      --lh-min: 46;
+      --lh-max: 64;
+      --screenwidth-min: 768;
+      --screenwidth-max: 1024;
+    }
+    .apl-card {
+      display: flex;
+      width: 458.39px;
+      height: 151.07px;
+      border-radius: 12.417px;
+      margin-bottom: 24px;
+      .icon {
+        width: 162px;
+        height: 152px;
+        border-radius: 12.417px 0px 0px 12.417px;
+        fa-icon {
+          font-size: 70px;
+        }
+      }
+      .text {
+        padding: 24px;
+        h3 {
+          font-size: 19px;
+          line-height: 28px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 22px;
+          width: 254px;
+          margin: 7px 0 !important;
+        }
+        a {
+          font-size: 14px;
+          line-height: 20px;
+          fa-icon {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .apl-team {
+    box-sizing: border-box;
+
+    .noMoblie {
+      font-size: 41.9835px;
+      line-height: 56px;
+      width: 200px;
+      text-align: center;
+    }
+    .apl-card {
+      width: 326px;
+      flex-direction: column;
+      height: auto;
+      border-radius: 17.9929px;
+      margin-bottom: 40px;
+
+      .icon {
+        width: 326px;
+        height: 188px;
+        border-radius: 17.9929px 17.9929px 0px 0px;
+
+        fa-icon {
+          font-size: 90px;
+        }
+      }
+      .text {
+        padding: 40px;
+
+        h3 {
+          font-size: 31.9874px;
+          line-height: 40px;
+          padding: 10px 0 14px 0;
+        }
+        p {
+          font-size: 15.9937px;
+          line-height: 26px;
+          margin: 7px 0 21px 0;
+        }
+        a {
+          font-size: 18.9925px;
+          line-height: 28px;
+          width: 225px;
+
+          fa-icon {
+            margin: 0px;
+            padding-top: 2px;
+          }
+        }
+      }
+    }
+  }
+}

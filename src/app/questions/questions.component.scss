@@ -1,0 +1,272 @@
+.questions {
+  background: linear-gradient(
+    0deg,
+    rgb(13, 118, 214, 0.2) 0%,
+    rgba(17, 173, 194, 0.2) 100%
+  );
+  width: 100vw;
+  height: 370px;
+  margin: 180px 0 0 calc((100vw - 1361px) / -2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .callout {
+    width: 294px;
+    margin-right: 252px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #212121;
+      margin: 0;
+    }
+    a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 12px;
+      border: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: #ffffff;
+      width: 180px;
+      height: 48px;
+      background: #0d76d6;
+      border-radius: 8px;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 10px;
+    width: 439px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 70px;
+    text-align: center;
+    h3 {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 48px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #212121;
+      margin: 0;
+    }
+    p {
+      font-size: 20px;
+      text-align: center;
+      //   box-sizing: border-box;
+    }
+    a {
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 28px;
+      color: #0d76d6;
+      display: block;
+      text-decoration: none;
+      fa-icon {
+        margin: 3px 0 0 10px;
+        padding-top: 1px;
+      }
+    }
+  }
+}
+// ---------------------->
+@media screen and (max-width: 1023px) {
+  .questions {
+    --screenwidth-min: 768;
+    --screenwidth-max: 1024;
+    --height-min: 235.63;
+    --height-max: 370;
+    --height-size: calc(
+      var(--height-min) * 1px + (var(--height-max) - var(--height-min)) *
+        (
+          (100vw - var(--screenwidth-min) * 1px) /
+            (var(--screenwidth-max) - var(--screenwidth-min))
+        )
+    );
+    width: 100vw;
+    height: var(--height-size);
+    margin: 130px 0px 0 calc(var(--padding-t) * -1);
+    justify-content: space-evenly;
+    .callout {
+      width: 221px;
+      margin: 10px 19px 0 0;
+      h2 {
+        --screenwidth-min: 768;
+        --screenwidth-max: 1024;
+        --font-min: 19;
+        --font-max: 32;
+        --font-size: calc(
+          var(--font-min) * 1px + (var(--font-max) - var(--font-min)) *
+            (
+              (100vw - var(--screenwidth-min) * 1px) /
+                (var(--screenwidth-max) - var(--screenwidth-min))
+            )
+        );
+        --lh-min: 28;
+        --lh-max: 40;
+        --line-height: calc(
+          var(--lh-min) * 1px + (var(--lh-max) - var(--lh-min)) *
+            (
+              (100vw - var(--screenwidth-min) * 1px) /
+                (var(--screenwidth-max) - var(--screenwidth-min))
+            )
+        );
+        font-size: var(--font-size);
+        line-height: var(--line-height);
+      }
+      a {
+        padding: 9px 20.5px;
+        font-size: 10px;
+        line-height: 19px;
+        width: 126px;
+        height: 38px;
+        border-radius: 8px;
+        margin-top: 0;
+      }
+    }
+    .card {
+      --screenwidth-min: 768;
+      --screenwidth-max: 1024;
+      --height-min: 145;
+      --height-max: 242;
+      --height-size: calc(
+        var(--height-min) * 1px + (var(--height-max) - var(--height-min)) *
+          (
+            (100vw - var(--screenwidth-min) * 1px) /
+              (var(--screenwidth-max) - var(--screenwidth-min))
+          )
+      );
+      --width-min: 222;
+      --width-max: 439;
+      --width-size: calc(
+        var(--width-min) * 1px + (var(--width-max) - var(--width-min)) *
+          (
+            (100vw - var(--screenwidth-min) * 1px) /
+              (var(--screenwidth-max) - var(--screenwidth-min))
+          )
+      );
+      --radius-min: 5.28915;
+      --radius-max: 10;
+      --radius-size: calc(
+        var(--radius-min) * 1px + (var(--radius-max) - var(--radius-min)) *
+          (
+            (100vw - var(--screenwidth-min) * 1px) /
+              (var(--screenwidth-max) - var(--screenwidth-min))
+          )
+      );
+      --padding-min: 25;
+      --padding-max: 70;
+      --padding-size: calc(
+        var(--padding-min) * 1px + (var(--padding-max) - var(--padding-min)) *
+          (
+            (100vw - var(--screenwidth-min) * 1px) /
+              (var(--screenwidth-max) - var(--screenwidth-min))
+          )
+      );
+      border-radius: var(--radius-size);
+      width: var(--width-size);
+      height: var(--height-size);
+      padding: 0 var(--padding-size);
+      h3 {
+        --screenwidth-min: 768;
+        --screenwidth-max: 1024;
+        --font-min: 16;
+        --font-max: 24;
+        --font-size: calc(
+          var(--font-min) * 1px + (var(--font-max) - var(--font-min)) *
+            (
+              (100vw - var(--screenwidth-min) * 1px) /
+                (var(--screenwidth-max) - var(--screenwidth-min))
+            )
+        );
+        --lh-min: 26;
+        --lh-max: 32;
+        --line-height: calc(
+          var(--lh-min) * 1px + (var(--lh-max) - var(--lh-min)) *
+            (
+              (100vw - var(--screenwidth-min) * 1px) /
+                (var(--screenwidth-max) - var(--screenwidth-min))
+            )
+        );
+        font-size: var(--font-size);
+        line-height: var(--line-height);
+      }
+      p {
+        margin: 6px 0 10px;
+      }
+      a {
+        font-size: 14px;
+        line-height: 20px;
+        fa-icon {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// ---------------------->
+@media screen and (max-width: 767px) {
+  .questions {
+    width: 100vw;
+    margin: 81px 0 0 calc((100vw - 329px) / -2);
+    // margin-bottom: 0px;
+    flex-direction: column;
+    height: 641.75px;
+    margin-bottom: 100px;
+    .callout {
+      width: 326px;
+      margin: 12px 0 62px 0;
+      text-align: center;
+      align-items: center;
+      h2 {
+        font-size: 31.9874px;
+        line-height: 40px;
+      }
+      a {
+        padding: 12px 30.5px;
+        width: 183px;
+        height: 47.98px;
+        font-size: 13.9945px;
+        line-height: 24px;
+      }
+    }
+    .card {
+      border-radius: 17.9929px;
+      width: 326.87px;
+      height: 233.91px;
+      padding: 0 25px;
+      h3 {
+        font-size: 18.9925px;
+        line-height: 28px;
+      }
+      p {
+        font-size: 15.9937px;
+        line-height: 26px;
+        width: 240px;
+        margin: 17px 0 18px;
+      }
+      a {
+        font-size: 15.9937px;
+        line-height: 26px;
+        fa-icon {
+          margin: 3px 0 0 10px;
+          padding-top: 1px;
+        }
+      }
+    }
+  }
+}

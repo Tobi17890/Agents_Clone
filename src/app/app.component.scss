@@ -1,0 +1,148 @@
+header::after {
+  content: "";
+  position: absolute;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  left: 0;
+  pointer-events: none;
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+header {
+  background-color: white;
+  height: var(--header-height-dl);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 100;
+  padding: 0 calc((100vw - var(--desktop-large)) / 2 + var(--padding-dl));
+  box-shadow: none;
+  margin-bottom: 20px;
+
+  //   margin-top: 10px;
+  a {
+    text-decoration: none;
+    img {
+      height: 32px;
+    }
+  }
+  #alp-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    max-width: 60%;
+    padding-left: 60px;
+    a {
+      font-size: 16px;
+      font-weight: 400;
+      color: #646464;
+      margin-right: 96px;
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  header {
+    padding: 0 var(--padding-ds);
+    #alp-nav {
+      max-width: 90%;
+      a {
+        padding: 0;
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 1439px) {
+//   .alp-application-wrapper {
+//     height: calc(100vh - var(--header-height-ds));
+//     padding: 0 var(--padding-ds);
+//     margin-top: var(--header-height-ds);
+//     position: relative;
+
+//   }
+// }
+
+@media screen and (max-width: 1439px) {
+  header {
+    padding: 0 var(--padding-ds);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  header {
+    height: var(--header-height-t);
+    font-size: 7.45px;
+    padding: 0 var(--padding-t);
+    a {
+      font-size: 7.45px;
+      #alp-logo {
+        display: flex;
+        min-width: 165px;
+        img {
+          --height-min: 16;
+          --height-max: 32;
+          --screenwidth-min: 768;
+          --screenwidth-max: 1024;
+          --height-size: calc(
+            var(--height-min) * 1px + (var(--height-max) - var(--height-min)) *
+              (
+                (100vw - var(--screenwidth-min) * 1px) /
+                  (var(--screenwidth-max) - var(--screenwidth-min))
+              )
+          );
+          height: var(--height-size);
+        }
+      }
+    }
+    #alp-nav {
+      padding-left: 30px;
+      a {
+        --font-min: 7.46667;
+        --font-max: 14;
+        --screenwidth-min: 768;
+        --screenwidth-max: 1024;
+        --font-size: calc(
+          var(--font-min) * 1px + (var(--font-max) - var(--font-min)) *
+            (
+              (100vw - var(--screenwidth-min) * 1px) /
+                (var(--screenwidth-max) - var(--screenwidth-min))
+            )
+        );
+        font-size: var(--font-size);
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 51.98px;
+    padding: 0 calc((100vw - var(--mobile)) / 2 + var(--padding-m));
+    a {
+      text-decoration: none;
+      #alp-logo {
+        display: flex;
+        min-width: 165px;
+        img {
+          height: 28px;
+        }
+      }
+    }
+    #alp-nav {
+      display: none;
+    }
+  }
+}

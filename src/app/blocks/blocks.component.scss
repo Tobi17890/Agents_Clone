@@ -1,0 +1,94 @@
+#alp-blocks {
+  margin-top: 141px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  h2 {
+    font-weight: 700;
+    margin: 0 0 73px;
+    font-size: 42px;
+    line-height: 56px;
+    width: 100%;
+    text-align: center;
+    color: #222222;
+  }
+  #alp-blocks-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    .item .alp-block {
+      width: 337px;
+      height: 277px;
+      padding: 38px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #eef4fa;
+      background: linear-gradient(
+        0deg,
+        rgb(13, 118, 214) 0%,
+        rgb(17, 173, 194) 100%
+      );
+      border-radius: 14.939px;
+      h3 {
+        font-weight: 700;
+        font-size: 45px;
+        margin: 0;
+        line-height: 40px;
+        color: #eef4fa;
+      }
+      p {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+// #alp-blocksOne {
+//   display: none;
+// }
+
+@media screen and (max-width: 1023px) {
+  #alp-blocks {
+    margin: 71px -24px 0;
+    gap: 36px;
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0 0 20px;
+      --font-min: 42;
+      --font-max: 53;
+      --lh-min: 46;
+      --lh-max: 64;
+      --screenwidth-min: 768;
+      --screenwidth-max: 1024;
+    }
+    #alp-blocks-carousel {
+      gap: 36px;
+      .item .alp-block {
+        width: 210px;
+        height: 204px;
+        padding: 27px 25px 12px;
+        h3 {
+          font-size: 19.9187px;
+          line-height: 25px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #alp-blocks {
+    margin-bottom: 100px;
+    // display: bl;
+  }
+}
